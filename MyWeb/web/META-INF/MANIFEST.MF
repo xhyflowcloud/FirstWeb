@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Class-Path: spring-beans-4.3.2.RELEASE.jar spring-aop-4.3.2.RELEASE.ja
+ r spring-webmvc-4.3.2.RELEASE.jar spring-web-4.3.2.RELEASE.jar spring
+ -tx-4.3.2.RELEASE.jar commons-logging-1.2.jar spring-expression-4.3.2
+ .RELEASE.jar spring-jdbc-4.3.2.RELEASE.jar spring-context-4.3.2.RELEA
+ SE.jar javax.servlet-api-3.0.1.jar mysql-connector-java-5.1.9.jar spr
+ ing-core-4.3.2.RELEASE.jar
+Main-Class: 
+

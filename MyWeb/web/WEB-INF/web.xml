@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>spring</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <!-- spring-mvc具体的配置文件 -->
+            <param-value>classpath:spring-config.xml</param-value>
+        </init-param>
+        <!-- servlet加载的优先级，当值大于等于0时在应用启动时就加载这
+            个servlet，值越小优先级越高。
+        当值为负数或未指定时servlet被使用时才加载 -->
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>spring</servlet-name>
+        <!-- spring-mvc能够处理的请求要匹配如下格式 -->
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+
+
+    <welcome-file-list>
+        <welcome-file>home.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
